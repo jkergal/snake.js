@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JK BOY Snake - by Johann Kergal</title>
+    <link rel="shortcut icon" type="image/png" href="uploads/images/favicon.png">
+    <style>
+        @font-face {
+            font-family: 'gameplayregular';
+            src: url('fonts/gameplay-webfont.eot');
+            src: url('fonts/gameplay-webfont.eot?#iefix') format('embedded-opentype'),
+                url('fonts/gameplay-webfont.woff2') format('woff2'),
+                url('fonts/gameplay-webfont.woff') format('woff'),
+                url('fonts/gameplay-webfont.ttf') format('truetype'),
+                url('fonts/gameplay-webfont.svg#gameplayregular') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        canvas {
+            position:absolute;
+            top: 224px;
+            left: 287px;
+            z-index:2;
+        }
+
+        html {
+            margin: 0px;
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            margin: 0px;
+            min-height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            background: no-repeat url('uploads/images/bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: left top;
+            background-attachment: fixed;
+            overflow-x:hidden;
+            overflow-y:hidden;
+            
+        }
+
+        #gameboy {
+            position:absolute;
+            top: 25px;
+            left: 25px;
+            z-index: 3;
+        }
+
+        #bg-corrector {
+            position:absolute;
+            top: 200px;
+            left: 250px;
+            z-index: 1;           
+        }
+
+        #game-container {
+            position: absolute;
+            width: 1050px;
+            height: 100%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id=game-container>
+        <img src="uploads/images/game_boy_overlay.png" id=gameboy>
+        <canvas width="400" height="400" id="game"></canvas>
+        <img src="uploads/images/bg_corrector.jpg" id=bg-corrector>
+        <script src="snake.js"></script></img>
+    </div>
+
+    
+</body>
+</html>
