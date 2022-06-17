@@ -1,6 +1,10 @@
 # Snake.js
 This is a backup of my first steps in Javascript (around October 2021). Just a simple Snake game made in JS with HTML5 canvas.
 
+## Demo
+
+https://johannkergal.fr/jkboy.html
+
 ## Author
 
 - [@jkergal](https://github.com/jkergal) (hello@johannkergal.fr)
